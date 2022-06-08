@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Sissors Papper tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 2cm;
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            font-size: 1cm;
+            text-align: center;
+            margin: 25px;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+        span{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        button{
+            border-radius: 50%;
+            padding: 1cm;
+        }
+        .buttons{
+            text-align: center;
+        }
+        i{
+            font-size: 1cm;
+        }
+        i:hover{
+            color: blue;
+        }
+        button:hover{
+            border-color: blue;
+            background-color: black;
+            color: blue;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <h2>Player  <br> <span id="user-choice"></span></h2>
+        <h2>Computer  <br> <span id="computer-choice"></span></h2>
+    </div>
+    <h1>Result </h1>
+    <h1  id="result"></h1>
+    <div class="buttons">
+        <button id="rock"> <i id="rock" class="fa-solid fa-hand-back-fist"></i> </button>
+        <button id="sissors" > <i id="sissors" class="fa-solid fa-hand-scissors"></i> </button>
+        <button id="papper"> <i id="papper" class="fa-solid fa-hand"></i> </button>
+    </div>
+
+    <script src="/app.js" charset="utf-8"></script>
+</body>
+</html>
