@@ -48,11 +48,30 @@
             background-color: black;
             color: blue;
             cursor: pointer;
-
         }
+        
+        body {
+            background: linear-gradient(-45deg, #33c416, #2bbbe7, #bb1fc0, #e9ec28);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
     </style>
 </head>
 <body>
+
     <div class="flex">
         <h2>Player  <br> <span id="user-choice"></span></h2>
         <h2>Computer  <br> <span id="computer-choice"></span></h2>
